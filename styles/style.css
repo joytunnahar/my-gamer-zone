@@ -56,6 +56,50 @@ nav li a{
     color: red;
 }
 
+/* banner styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+    padding: 50px 0;
+}
+
+.banner-sub-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.banner-title{
+    font-size: 5.9rem;
+    font-weight: 800;
+    margin-top: 0;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.banner ul{
+    margin-top: -40px;
+}
+.banner ul >li{
+    list-style: none;
+    color: #534C64;
+    color: #534C64;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.banner ul >li #red{
+    color: rgb(165, 3, 3);
+}
+.banner-img img{
+    width: 100%;
+    
+    
+}
+
 
 
 
@@ -80,6 +124,13 @@ nav li a{
     .btn-follow-us{
         width: 100%;
     }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-img img{
+        width: 350px;
+    }
 }
 
 
@@ -92,5 +143,9 @@ nav li a{
     nav ,
     nav .menu{
         flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
     }
 }
