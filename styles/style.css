@@ -7,7 +7,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 main{
-   margin: 50px 200px ;
+   margin: 0 200px ;
 }
 
 /* Nav styles */
@@ -198,10 +198,48 @@ width: 100%;
     max-width: 200px;
     position: relative;
     top: -150px; left: 480px;
+}
+/* career section */
+.career{
+    display: flex;
+    align-items: center;
+   gap: 30px;
+   background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+   padding: 50px 200px;
    
-  
 
 }
+.career-content{
+    color: #ffff;
+    width: 50%;
+}
+.career-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.btn-see-all-position{
+    color: #7a0944;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 48px;
+    background: #FFF;
+    padding: 10px 20px;
+}
+.career-img{
+    width: 50%;
+}
+.career-img img{
+   width:100% ;
+}
+.position-info{
+    display: flex;
+    gap: 10px;
+}
+.position-location{
+    text-align: right;
+}
+
 
 
 
@@ -259,7 +297,8 @@ width: 100%;
     .games-card{
        margin: 10px 50px;
     }
-    .play-instantly-container{
+    .play-instantly-container,
+    .career{
         flex-direction: column-reverse;
     }
     .small-img img{
@@ -274,6 +313,13 @@ width: 100%;
         text-align: center;
       
     }
+    .career-content{
+        width: 300px;
+    }
+    .career-img{
+        width: 300px;
+    }
+   
    
    
 }
@@ -304,7 +350,8 @@ width: 100%;
     .online-games-container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .play-instantly-container{
+    .play-instantly-container,
+    .career{
         flex-direction: column-reverse;
     }
     .small-img img{
@@ -318,5 +365,12 @@ width: 100%;
     .play-instantly-content{
         text-align: center;
       
+    }
+    .career-content{
+        width: 300px;
+
+    }
+    .career-img{
+        width: 300px;
     }
 }
