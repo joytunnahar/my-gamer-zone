@@ -166,6 +166,12 @@ nav li a{
     font-weight: 700;
     margin-bottom: 0px;
 }
+.games-card img:hover{
+    
+    box-shadow: inset 0 0 0 2000px rgba(20, 20, 20, 0.3);
+    opacity: 200px;
+   
+}
 
 .online-games-container{
     display: grid;
@@ -239,6 +245,35 @@ width: 100%;
 }
 .position-location{
     text-align: right;
+
+}
+/* button section */
+.btn-container{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 50px 200px;
+}
+.button{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: #0B0223;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px 20px;
+    height: 50px;
+   
+}
+.button:hover{
+    background-color: #fff;
+    border: 2px solid rgb(156, 20, 66);
+    color: rgb(156, 20, 66);
+}
+.button img{
+    width: 20%;
 }
 /* footer styles */
 .footer{
@@ -306,7 +341,8 @@ width: 100%;
         margin:0 auto;
      }
     .btn-follow-us{
-        width: 100%;
+        width: 200px;
+        height: 50px;
     }
     .banner{
         flex-direction: column-reverse;
@@ -355,6 +391,11 @@ width: 100%;
     }
     .career-img{
         width: 300px;
+    }
+    .btn-container{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        margin: 0;
     }
     .menu-link ul {
         display: grid;
@@ -424,6 +465,10 @@ width: 100%;
     }
     .career-img{
         width: 300px;
+    }
+    .btn-container{
+        margin: 0;
+        padding:  20px ;
     }
     .footer-content{
         padding: 20px 30px;
